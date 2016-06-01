@@ -1,0 +1,11 @@
+Extra Credits : 
+
+Beautiful Search Results Page/Front-End:
+For this extra credit, I created a beautiful Front-End experience, with a nicely styled html page and search results. The page has a cool NBA background image, logo, and page name. All page elements (main search box / results) have a nice dark grey and slightly transparent background that separates the elements while stylishly leaving the background partially visible. Query suggestion results show up right below the text input, change color on hover, and are selectable (upon selection it populates new results based on the selection and changes the input of the text box). NBA player searches reveal a nicely formatted block of data containing their stats as well as player headshots and team logos (A feature I did not include in PA1). Any relevant articles found are listed below the player data section, with highlightable/selectable articles links and easy to read formatting of titles, urls, and dates published. Finally, the ads at the bottom were also customized to be unintrusive and colored to avoid clashing with the palette of the page. 
+
+Google Instant Result Searches: 
+Typing anything into the text input box of the index.html will return instant results (at slowest 1~2 seconds, usually <.5 seconds) including search suggestions, player data, and any relevant articles found. All search results are displayed immediately based on keyup or selection of a search suggestion. 
+
+Hybrid Trie: 
+Data from the wikipedia titles were stored into a hybrid trie structure where nodes exist as List<strings> until more than 25 strings have been entered into the node. When that happens, the node adds all of its strings back into the trie structure, and labels itself as no longer a list node with the "isList" bool and clears its list to save space. Parsing through the hybrid trie is similar to parsing through a regular trie, however, now the web role must always check if a node is a list - and if it is a list, it will simply add from the list until it hits 10 suggestions or move on. 
+
