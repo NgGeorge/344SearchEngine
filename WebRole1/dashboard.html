@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CNN-BR Spider</title>
+	<meta charset="utf-8" />
+    <meta name="author" content="George Ng" />
+    <meta name="description" content="A web crawler that crawls CNN & BleacherReport/NBA" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="jscripts.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="header"> 
+        <h1> CNN | Bleacher Report <span id="titleSpan">Spider</span></h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="row1">
+            <div class="col-md-6">
+                <h2> Crawler State : <span id="cState">Retrieving Data</span></h2>
+                <h3> CPU : <span id="CPU"></span> %</h3>
+                <div id="cpuBar"><div id="cpuFilled"></div></div>
+                <div id="cpuDiv"></div>
+                <h3> RAM Utilized : <span id="ramU"></span> MB</h3>
+                <div id="ramBar"><div id="ramFilled"></div> </div>
+                <div id="ramDiv"></div>
+                <h3> RAM Available : <span id="ramA"></span> MB</h3>
+                <div id="ramABar"><div id="ramAFilled"></div> </div>
+                <div id="ramADiv"></div>
+                <h3> URLS Crawled : <span id="urlsCrawled"></span> URLs</h3>
+                <h3> Queue Size : <span id="queueSize"></span> URLs</h3>
+                <h3> Table Size : <span id="tableSize"></span> Sites</h3>
+                <br />
+                <h3> <b>Query Suggestion Engine</b> </h3>
+                <h3> # of Titles Stored : <span id="titlesStored"></span> Titles</h3>
+                <h3> Last Title Stored : <span id="lastTitle"></span></h3>
+            </div>
+            <div class="col-md-6">
+                <div id="ssc">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                    <button id="clear">Clear</button>
+                    <p id="buttonMessage"></p>
+                </div>
+                <br>
+                <input type="text" id="desiredURL" placeholder="URL Search" />
+                <button id="submit">Submit</button>
+                <div id="pageStats">Search Results : 
+                <h4>Title : </h4>
+                <h4>Published Date : </h4>
+                <h4>Url : </h4>
+                </div>
+                <div id="lastTenTable">Last Ten URLs crawled : </div>
+                <div id="errorTable">Error Links Found : </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="workerStates"></div>
+    <div id="stats">
+        <div id="machineCounters"></div>
+        <div id="URLS">
+            <p id="numCrawled"></p>
+            <ul id="last10URLS"></ul>
+        </div>
+        <div id="queueSize"></div>
+        <div id="indexSize"></div>
+        <div id="errors"></div>
+
+    </div>
+</body>
+</html>

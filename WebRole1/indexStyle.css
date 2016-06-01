@@ -1,0 +1,162 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
+a {
+    color: rgb(47, 47, 47);
+}
+
+body {
+	background-image: url('nba.jpg');
+    background-attachment: scroll;
+	color: white;
+	font-family: Open Sans, sans-serif;
+	text-align: center;
+}
+
+stat > h1 {
+	display: inline;
+	font-size: 50px;
+	vertical-align: middle;
+}
+
+form, table {
+	color: white;
+	background-color: rgb(47, 47, 47);
+	border-radius: .5vw;
+	margin: 1vw;
+	padding: 1vw;
+}
+
+legend {
+	color: white;
+	font-size: 40px;
+	margin-bottom: 1vw;
+}
+
+input {
+	color: black;
+    width: 30vw;
+    min-width: 200px;
+}
+
+ol {
+    list-style-type : none;
+}
+
+ol > li {
+    background-color: white;
+    color: rgb(47, 47, 47);
+}
+
+ol > li:hover {
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+
+td {
+	padding: .5vw;
+}
+
+#ATSB {
+	padding: 1vw; 
+	border-bottom: white solid 2px;
+	margin: 2vw;
+}
+
+#basketballPic {
+	height: 15vh;
+	vertical-align: middle;
+}
+
+#logoArea {
+	margin: 2vw;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+}
+
+#nameTeam {
+	padding: 1vw;
+	border-bottom: white solid 2px;
+	margin: 1vw;
+}
+
+#NBA {
+    color: orange;
+}
+
+#search {
+    background-color: rgba(47,47,47,.85);
+    border-radius: 5px;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    margin-top : 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#searchResults {
+    background-color: rgba(47, 47, 47, .85);
+    border-radius: .5vw;
+    padding: 2vw;
+	padding-bottom: .5vw;
+	margin: 1vw;
+    text-align: left;
+}
+
+#search > h1 {
+    font-weight: bold;
+    color: white;
+}
+
+#suggestions {
+    width: 30vw;
+    min-width: 200px;
+    padding: 0;
+}
+
+#suggestionsDiv {
+    width: 50vw;
+    min-width: 200px;
+    margin-right: auto;
+    margin-left: 22%;
+    text-align: left;
+}
+
+#stat {
+	background-color: rgba(47, 47, 47, .85);
+    border-radius: .5vw;
+	padding: 2vw;
+	padding-bottom: .5vw;
+	margin: 1vw;
+}
+
+#statBlock {
+	border: white solid 2px;
+	margin: 2vw;
+	padding-bottom : 1vw;
+}
+
+#teamPic {
+    height: 185px;
+    width: 230px;
+}
+
+.articleFound {
+    background-color : white;
+    color: rgb(47, 47, 47);
+    padding: 1vw; 
+    margin: 1vh;
+}
+
+.aTitle {
+    font-weight: bold;
+}
+
+.aDate {
+    font-style: italic;
+}
+
+
+

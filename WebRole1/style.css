@@ -1,0 +1,117 @@
+﻿@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans);
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button, input { 
+    font-size: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+input {
+    width: 80%;
+}
+
+span {
+    font-weight: bold;
+}
+
+#buttonMessage {
+    background-color: #ffcccc;
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#cState {
+    color: #7e7e7e;
+}
+
+#cpuBar, #ramBar, #ramABar {
+    border-left: #7e7e7e;
+    border-right: #7e7e7e;
+    border-left-style: solid;
+    border-right-style: solid;
+    width: 100%;
+    height: 24px;
+}
+
+#cpuFilled, #ramFilled {
+    background-color: #b20000;
+    height: 100%;
+    width: 0%;
+}
+
+#ramAFilled {
+    background-color: #b20000;
+    height: 100%;
+    width: 0%;
+}
+
+#header {
+    background-color: #2a2a2a;
+    color: white;
+    font-family: "Montserrat";
+    height: 5vh;
+    min-height: 50px;
+    padding: 1vh;
+    padding-left: 40px;
+    width: 100%;
+}
+
+#pageStats, #errorTable, #lastTenTable {
+    border: 2px solid #7e7e7e;
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+#errorTable {
+    margin-top: 20px;
+    overflow: auto;
+    max-height: 250px;
+}
+
+#pageStats > h4, a {
+    font-size: 18px;
+}
+
+#row1 {
+    background-color: white;
+}
+
+#start, #stop, #clear {
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#start {
+    margin-left: 0;
+}
+
+#titleSpan {
+    color: #b20000;
+}
+
+.col-md-6 {
+    padding: 4vw;
+}
+
+.errorDiv, .linkDiv {
+    border-top: 2px solid #7e7e7e;
+}
